@@ -19,7 +19,9 @@ cd slidely-backend
 ### 2. Install Dependencies
 Install the required npm packages:
 ```sh
-npm install
+npm install express body-parser
+npm install --save-dev typescript ts-node @types/node @types/express nodemon
+
 ```
 
 ### 3. Compile TypeScript
