@@ -27,6 +27,7 @@ npm install --save-dev typescript ts-node @types/node @types/express nodemon
 ### 3. Compile TypeScript
 Compile the TypeScript files to JavaScript:
 ```sh
+cd backend-google-form-alternative
 npx tsc
 ```
 
