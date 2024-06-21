@@ -5,7 +5,7 @@ import path from 'path';
 
 const app = express();
 const PORT = 3000;
-const dbFilePath = path.join(__dirname, 'db.json');
+const dbFilePath = path.join(__dirname, '../db.json');
 
 app.use(bodyParser.json());
 
@@ -16,8 +16,8 @@ app.get('/ping', (req, res) => {
 
 // Endpoint to submit data
 app.post('/submit', (req, res) => {
-    const { name, email, phone, github_link, stopwatch_time } = req.body;
-    const newSubmission = { name, email, phone, github_link, stopwatch_time };
+    const { Name, Email, Phone, GithubLink, StopwatchTime } = req.body;
+    const newSubmission = { Name, Email, Phone, GithubLink, StopwatchTime };
 
     fs.readFile(dbFilePath, 'utf8', (err, data) => {
         if (err) {
